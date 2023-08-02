@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: navy;
+    background-color: #1d1d1d;
 }
 
 h2 {
@@ -12,29 +12,54 @@ h2 {
     margin-top: 20px;
     margin-bottom: 20px;
     text-shadow: 1px 1px black;
-    color: gold;
+    color: white;
 }
 
 p {
     font-size: 20px;
-    color: yellow;
+    color: white;
     text-shadow: 1px 1px black;
 }
 
 #opening_text {
     text-align: center;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    background-color: blue;
+}
+
+#scoreboard_text {
+    border: 3px solid white;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    background-color: blue;
+    text-align: center;
+}
+
+#scoreboard_text p {
+    font-size: 16px;
 }
 
 .button {
-    border: 3px solid black;
+    border: 3px solid white;
     border-radius: 20px;
     padding: 5px;
     text-align: center;
     font-size: 16px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background-color: blue;
+    margin-top: 10px;
+    margin-bottom: 10px;
     cursor: pointer;
+}
+
+.button p {
+    font-size: 16px;
+}
+
+#question_1, #question_2, #question_3, #question_4, #question_5, #question_6, #question_7, #question_8, #question_9, #question_10, #answer_1_box, #answer_2_box, #answer_3_box, #answer_4_box, #question_box {
+    background-color: blue;
 }
 
 #question_box {
@@ -48,9 +73,45 @@ p {
     justify-content: space-around;
 }
 
-@media screen and (min-width: 592px) {
+#question_box {
+    border: 5px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+#question_box p {
+    font-size: 20px;
+}
+
+.answer {
+    border: 5px solid white;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.answer p {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 590px) {
+
+    #scoreboard_text p {
+        font-size: 20px;
+    }
+
     .button {
-        border: 5px solid black;
+        border: 5px solid white;
         border-radius: 30px;
         padding: 10px;
         font-size: 20px;
@@ -58,26 +119,59 @@ p {
         margin-bottom: 15px;
     }
 
+    .button p {
+        font-size: 20px;
+    }
+
     #question_box {
-        border: 5px solid gold;
+        border: 5px solid white;
         border-radius: 10px;
         padding: 20px;
-        font-size: 20px;
-        margin-top: 70px;
+        margin-top: 40px;
         margin-bottom: 15px;
     }
 
+    #question_box p {
+        font-size: 24px;
+    }
+
     .answer {
-        border: 5px solid gold;
+        border: 5px solid white;
         border-radius: 10px;
         padding-top: 20px;
         padding-bottom: 20px;
-        padding-right: 70px;
-        padding-left: 70px;
-        font-size: 16px;
+        padding-right: 60px;
+        padding-left: 60px;
+        font-size: 20px;
         margin-top: 15px;
         margin-bottom: 15px;
         text-align: center;
         cursor: pointer;
+    }
+
+    .answer p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    #question_box p {
+        font-size: 30px;
+    }
+    
+    .answer {
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+}
+
+@media screen and (min-width: 910px) {
+    #question_box p {
+        font-size: 30px;
+    }
+    
+    .answer {
+        padding-right: 120px;
+        padding-left: 120px;
     }
 }
