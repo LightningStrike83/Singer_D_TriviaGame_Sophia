@@ -19,6 +19,7 @@ p {
     font-size: 20px;
     color: white;
     text-shadow: 1px 1px black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #opening_text {
@@ -86,22 +87,24 @@ p {
     font-size: 20px;
 }
 
-.answer {
+#answer_1_box, #answer_2_box, #answer_3_box, #answer_4_box {
+    width: 300px;
     border: 5px solid white;
     border-radius: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 30px;
-    padding-left: 30px;
     font-size: 16px;
     margin-top: 15px;
     margin-bottom: 15px;
     text-align: center;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .answer p {
     font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 @media screen and (min-width: 590px) {
@@ -135,13 +138,11 @@ p {
         font-size: 24px;
     }
 
-    .answer {
+    #answer_1_box, #answer_2_box, #answer_3_box, #answer_4_box {
         border: 5px solid white;
         border-radius: 10px;
         padding-top: 20px;
         padding-bottom: 20px;
-        padding-right: 60px;
-        padding-left: 60px;
         font-size: 20px;
         margin-top: 15px;
         margin-bottom: 15px;
@@ -158,20 +159,10 @@ p {
     #question_box p {
         font-size: 30px;
     }
-    
-    .answer {
-        padding-right: 80px;
-        padding-left: 80px;
-    }
 }
 
 @media screen and (min-width: 910px) {
     #question_box p {
         font-size: 30px;
-    }
-    
-    .answer {
-        padding-right: 120px;
-        padding-left: 120px;
     }
 }
