@@ -9,6 +9,8 @@
     <title>Trivia Game For Sophia</title>
 </head>
 <body>
+
+    <div class="hidden right wrong"></div>
     <div id="container">
         <section id="opening_text" class="grid-con">
             <h2 class="hidden">
@@ -38,43 +40,43 @@
             <h2 class="hidden">Game Area</h2>
         <section id="question_buttons" class="col-start-1 col-end-2 m-col-start-1 m-col-end-3">
             <h2 class="hidden">Question Buttons</h2>
-            <p class="button" id="question_1">
+            <p class="button" data-member="0" id="question_1">
                 Question 1
             </p>
 
-            <p class="button" id="question_2">
+            <p class="button" data-member="1" id="question_2">
                 Question 2
             </p>
 
-            <p class="button" id="question_3">
+            <p class="button" data-member="2" id="question_3">
                 Question 3
             </p>
 
-            <p class="button" id="question_4">
+            <p class="button" data-member="3" id="question_4">
                 Question 4
             </p>
 
-            <p class="button" id="question_5">
+            <p class="button" data-member="4" id="question_5">
                 Question 5
             </p>
 
-            <p class="button" id="question_6">
+            <p class="button" data-member="5" id="question_6">
                 Question 6
             </p>
 
-            <p class="button" id="question_7">
+            <p class="button" data-member="6" id="question_7">
                 Question 7
             </p>
 
-            <p class="button" id="question_8">
+            <p class="button" data-member="7" id="question_8">
                 Question 8
             </p>
 
-            <p class="button" id="question_9">
+            <p class="button" data-member="8" id="question_9">
                 Question 9
             </p>
 
-            <p class="button" id="question_10">
+            <p class="button" data-member="9" id="question_10">
                 Question 10
             </p>
         </section>
@@ -83,7 +85,7 @@
             <section id="question">
                 <h2 class="hidden">Question Box</h2>
                 <div id="question_box">
-                    <p id="question_text">Here is where the question will appear</p>
+                    <p id="question_text" class="question">Here is where the question will appear</p>
                 </div>
             </section>
 
@@ -108,6 +110,7 @@
         </div>
     </section>
     </div>
+    <script src="js/questions.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
